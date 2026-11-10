@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Register | CrowdMeter NJIT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CrowdMeter NJIT</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/login.html">Login</a>
+      <a href="/register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="account">
+    <h2>Create an account</h2>
+    <p>Account creation will be added in Milestone 2.</p>
+
+    <form onsubmit="
+      event.preventDefault();
+      if (this.elements.password.value !== this.elements.confirm.value) {
+        alert('Passwords do not match.');
+        return;
+      }
+      alert('Form complete. Account creation is not connected yet.');
+    ">
+      <label>
+        Username
+        <input type="text" autocomplete="username" required>
+      </label>
+
+      <label>
+        NJIT email
+        <input type="email" pattern=".+@njit\.edu"
+               placeholder="you@njit.edu" autocomplete="email"
+               title="Use your @njit.edu email address" required>
+      </label>
+
+      <label>
+        Password
+        <input type="password" name="password" minlength="12"
+               autocomplete="new-password" required>
+      </label>
+      <small>Use at least 12 characters.</small>
+
+      <label>
+        Confirm password
+        <input type="password" name="confirm"
+               autocomplete="new-password" required>
+      </label>
+
+      <button type="submit">Register</button>
+    </form>
+
+    <p>Already registered? <a href="/login.html">Login</a></p>
+  </main>
+
+  <footer>IT 340 · CrowdMeter NJIT</footer>
+</body>
+</html>
