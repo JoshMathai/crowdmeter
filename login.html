@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Login | CrowdMeter NJIT</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CrowdMeter NJIT</h1>
+    <nav>
+      <a href="/">Home</a>
+      <a href="/login.html">Login</a>
+      <a href="/register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="account">
+    <h2>Login</h2>
+    <p>Account authentication will be added in Milestone 2.</p>
+
+    <form onsubmit="event.preventDefault(); alert('Login is not connected yet.');">
+      <label>
+        Username
+        <input type="text" autocomplete="username" required>
+      </label>
+
+      <label>
+        Password
+        <input type="password" autocomplete="current-password" required>
+      </label>
+
+      <button type="submit">Login</button>
+    </form>
+
+    <p>New here? <a href="/register.html">Register</a></p>
+  </main>
+
+  <footer>IT 340 · CrowdMeter NJIT</footer>
+</body>
+</html>
