@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <!-- Load the account buttons and login checks. -->
+<script src="app.js" defer></script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>CrowdMeter NJIT</title>
@@ -17,6 +19,9 @@
   </header>
 
   <main>
+    <!-- Display the account returned by the back end. -->
+<p id="accountStatus" role="status">Checking login...</p>
+<button id="logoutButton" type="button" hidden>Log out</button>
     <h2>Find your space. Skip the crowd.</h2>
     <p>Check campus crowd levels before heading out.</p>
     <p>Sample data for Milestone 1.</p>
